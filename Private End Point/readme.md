@@ -20,17 +20,17 @@ For automigrated single servers with private endpoints, customers must manually 
 
 - Confirm that Flexible server with the same name as single server exists in the same subscription and resource group. This indicates that the automigration was successful. (Refer to the attached screenshots from Azure portal for reference). 
 
-:::image type="content" source="media/img1.png" alt-text="Screenshot of the Single server which was successfully automigrated" lightbox="media/img1.png":::
+:::image type="content" source="./media/img1.png" alt-text="Screenshot of the Single server which was successfully automigrated" lightbox="./media/img1.png":::
 
-:::image type="content" source="media/img3.png" alt-text="Screenshot of the Flexible server which was successfully automigrated" lightbox="media/img3.png":::
+:::image type="content" source="./media/img3.png" alt-text="Screenshot of the Flexible server which was successfully automigrated" lightbox="./media/img3.png":::
 
 - Delete the private end point associated with the Single Server using [Azure CLI](https://learn.microsoft.com/cli/azure/postgres/server/private-endpoint-connection?view=azure-cli-latest#az-postgres-server-private-endpoint-connection-delete) or by following steps in Azure portal.
 
-:::image type="content" source="media/img5.png" alt-text="Screenshot of the Private end point of Single server" lightbox="media/img5.png":::
+:::image type="content" source="./media/img5.png" alt-text="Screenshot of the Private end point of Single server" lightbox="./media/img5.png":::
 
-:::image type="content" source="media/img6.png" alt-text="Screenshot of the details of Private end point of Single server along with delete option" lightbox="media/img6.png":::
+:::image type="content" source="./media/img6.png" alt-text="Screenshot of the details of Private end point of Single server along with delete option" lightbox="./media/img6.png":::
 
-:::image type="content" source="media/img8.png" alt-text="Screenshot of the details of deletion of Private end point of Single server" lightbox="media/img8.png":::
+:::image type="content" source="./media/img8.png" alt-text="Screenshot of the details of deletion of Private end point of Single server" lightbox="./media/img8.png":::
 
 - Create a private end point on the auto migrated Flexible server, using the same name as the one from single server using [Azure CLI](https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-networking-servers-deployed-public-access-add-private-endpoint?tabs=cli-add-private-endpoint-connection) or [Azure portal](https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-networking-servers-deployed-public-access-add-private-endpoint?tabs=portal-add-private-endpoint-connections).
 
@@ -38,8 +38,8 @@ For automigrated single servers with private endpoints, customers must manually 
 
 - Ensure that the deployment completes successfully and that the private end point is attached to the Flexible server.
 
-:::image type="content" source="media/img13.png" alt-text="Screenshot of the details of private end point with Flexible server" lightbox="media/img13.png":::
+:::image type="content" source="./media/img13.png" alt-text="Screenshot of the details of private end point with Flexible server" lightbox="./media/img13.png":::
 
 - After configuration, you should be able to connect to automigrated flexible server using the same connection strings as single server via the private end point. 
 
-:::image type="content" source="media/img12.png" alt-text="Screenshot of the successful connection to automigrated flex server using private end point." lightbox="media/img12.png":::
+:::image type="content" source="./media/img12.png" alt-text="Screenshot of the successful connection to automigrated flex server using private end point." lightbox="./media/img12.png":::
